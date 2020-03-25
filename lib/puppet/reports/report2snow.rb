@@ -38,6 +38,8 @@ Puppet::Reports.register_report(:report2snow) do
         :state => '7',
         :sys_created_by => 'Puppet but not Kermit',
         :urgency => '1',
+        :close_notes => 'New',
+        :close_code => 'Solved (Work Around)',
         :work_notes => "Node Reports: [code]<a class='web' target='_blank' href='#{PUPPETCONSOLE}/#/node_groups/inventory/node/#{self.host}/reports'>Reports</a>[/code]"
       }
       logFile.write("[#{timestamp}]: DEBUG: payload:\n-------\n#{request_body_map}\n-----\n") if DEBUG == true
