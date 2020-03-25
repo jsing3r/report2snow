@@ -4,6 +4,7 @@ require 'json'
 require 'rest-client'
 require 'base64'
 
+# This is an added comment
 Puppet::Reports.register_report(:report2snow) do
   desc "Send corrective changes to ServiceNow"
   @configfile = File.join([File.dirname(Puppet.settings[:config]), "report2snow.yaml"])
