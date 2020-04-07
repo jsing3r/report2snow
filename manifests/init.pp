@@ -44,4 +44,8 @@ class report2snow (
     replace => false,
     content => epp("${module_name}/${module_name}.yaml.epp"),
   }
+  
+  service { 'pe-puppetserver':
+    ensure. => running,
+  }
 }
