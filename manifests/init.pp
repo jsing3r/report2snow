@@ -46,6 +46,6 @@ class report2snow (
   }
   
   service { 'pe-puppetserver':
-    ensure. => running,
+    ensure  => running,
   }
 }
