@@ -36,6 +36,10 @@ class report2snow (
     notify               => Service['pe-puppetserver'],
   }
 
+  service { 'pe-puppetserver' :
+    ensure               =>  running,
+  }
+
   file { "${settings::confdir}/${module_name}.yaml":
     ensure  => present,
     owner   => 'pe-puppet',
