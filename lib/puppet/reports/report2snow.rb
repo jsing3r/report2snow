@@ -40,7 +40,7 @@ Puppet::Reports.register_report(:report2snow) do
         :urgency => '1',
         :close_notes => 'New',
         :close_code => 'Solved (Work Around)',
-        :work_notes => "Node Reports: [code]<a class='web' target='_blank' href='#{PUPPETCONSOLE}/#/inspect/node/#{self.host}/reports'>Reports</a>[/code]"
+        :work_notes => "Node Reports: [code]<a class='web' target='_blank' href='#{PUPPETCONSOLE}/#/enforcement/node/#{self.host}/reports'>Reports</a>[/code]"
       }
       logFile.write("[#{timestamp}]: DEBUG: payload:\n-------\n#{request_body_map}\n-----\n") if DEBUG == true
       response = RestClient.post("#{SN_URL}",
