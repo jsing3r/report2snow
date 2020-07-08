@@ -36,7 +36,8 @@ Puppet::Reports.register_report(:report2snow) do
         :severity => '2',
         :short_description => "Puppet Corrective Change on #{self.host}",
         :state => '7',
-        :sys_created_by => 'System Administrator',
+        :sys_created_by => 'Puppet Enterprise',
+	:caller_id => '4efcdf7e2f711010b8d6309cf699b632'
         :urgency => '2',
         :close_notes => 'New',
         :close_code => 'Solved (Work Around)',
