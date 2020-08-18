@@ -31,14 +31,14 @@ On the Puppet Master, this module:
 report2snow requires the rest-client gem.
 
 ```bash
-puppetserver gem install rest-client
+puppetserver gem install rest-client --no-document
 ```
 
 **NOTE: depending on your PE version, the bundled ruby version may not be supported. In
 that case you may need a previous version of the rest-client gem, such as:
 
 ```bash
-puppetserver gem install rest-client -v 2.0.0.rc2 --pre
+puppetserver gem install rest-client -v 2.0.0.rc2 --pre --no-document
 ```
 
 ### Beginning with report2snow
